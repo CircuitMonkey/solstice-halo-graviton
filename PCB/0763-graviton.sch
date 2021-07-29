@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -116,7 +116,7 @@
 <layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="23" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
@@ -2885,7 +2885,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="SUPPLY2" library="supply2" deviceset="VEE" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="R_REF" library="rlc" library_urn="urn:adsk.eagle:library:4192893" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:4193040/2"/>
+<part name="R_REF" library="rlc" library_urn="urn:adsk.eagle:library:4192893" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:4193040/2" value="600"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -2956,6 +2956,38 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<wire x1="50.8" y1="106.68" x2="33.02" y2="114.3" width="0.1524" layer="150"/>
+<wire x1="33.02" y1="114.3" x2="33.02" y2="116.84" width="0.1524" layer="150"/>
+<wire x1="33.02" y1="116.84" x2="34.29" y2="116.84" width="0.1524" layer="150"/>
+<wire x1="34.29" y1="116.84" x2="34.29" y2="121.92" width="0.1524" layer="150"/>
+<wire x1="34.29" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="150"/>
+<wire x1="33.02" y1="121.92" x2="31.75" y2="121.92" width="0.1524" layer="150"/>
+<wire x1="31.75" y1="121.92" x2="31.75" y2="116.84" width="0.1524" layer="150"/>
+<wire x1="31.75" y1="116.84" x2="33.02" y2="116.84" width="0.1524" layer="150"/>
+<wire x1="33.02" y1="121.92" x2="33.02" y2="129.54" width="0.1524" layer="150"/>
+<wire x1="33.02" y1="129.54" x2="34.29" y2="129.54" width="0.1524" layer="150"/>
+<wire x1="34.29" y1="129.54" x2="33.02" y2="132.08" width="0.1524" layer="150"/>
+<wire x1="33.02" y1="132.08" x2="31.75" y2="129.54" width="0.1524" layer="150"/>
+<wire x1="31.75" y1="129.54" x2="33.02" y2="129.54" width="0.1524" layer="150"/>
+<text x="34.036" y="117.348" size="1.778" layer="150" rot="R90">10K</text>
+<text x="113.03" y="40.64" size="5.08" layer="150">REDLINE</text>
+<wire x1="181.61" y1="140.97" x2="181.61" y2="139.7" width="0.1524" layer="150"/>
+<wire x1="181.61" y1="139.7" x2="181.61" y2="138.43" width="0.1524" layer="150"/>
+<wire x1="181.61" y1="138.43" x2="185.42" y2="138.43" width="0.1524" layer="150"/>
+<wire x1="185.42" y1="138.43" x2="185.42" y2="139.7" width="0.1524" layer="150"/>
+<wire x1="185.42" y1="139.7" x2="185.42" y2="140.97" width="0.1524" layer="150"/>
+<wire x1="185.42" y1="140.97" x2="181.61" y2="140.97" width="0.1524" layer="150"/>
+<wire x1="181.61" y1="139.7" x2="179.07" y2="139.7" width="0.1524" layer="150"/>
+<wire x1="179.07" y1="139.7" x2="179.07" y2="142.24" width="0.1524" layer="150"/>
+<wire x1="185.42" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="150"/>
+<wire x1="187.96" y1="139.7" x2="187.96" y2="142.24" width="0.1524" layer="150"/>
+<wire x1="186.69" y1="142.24" x2="189.23" y2="142.24" width="0.1524" layer="150"/>
+<wire x1="189.23" y1="142.24" x2="187.96" y2="144.78" width="0.1524" layer="150"/>
+<wire x1="187.96" y1="144.78" x2="186.69" y2="142.24" width="0.1524" layer="150"/>
+<circle x="179.07" y="143.51" radius="1.27" width="0.1524" layer="150"/>
+<text x="182.88" y="138.938" size="1.778" layer="150">0</text>
+<text x="177.038" y="145.288" size="1.778" layer="150">Vee</text>
+<text x="186.182" y="145.034" size="1.778" layer="150">VCC</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes"/>
